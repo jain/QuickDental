@@ -9,7 +9,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background: linear-gradient(to bottom right, #e3f2fd, #f9f9f9);
       color: #333;
     }
 
@@ -48,6 +48,18 @@
       border-left: 5px solid #0080ff;
       padding: 1rem;
       border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .offer-box img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 8px;
     }
 
     .offer-box h2 {
@@ -179,6 +191,9 @@
 </header>
 
 <section>
+  <div class ="dentist-img">
+    <img src="dentist.png" alt="Instant appointment image">
+  </div>
   <div class="offers">
     <div class="offer-box">
       <h2>$10 Instant Appointment</h2>
