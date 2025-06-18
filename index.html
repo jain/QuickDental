@@ -174,5 +174,16 @@
   &copy; 2025 Quick Dental. All rights reserved.
 </footer>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll('.cta-buttons a');
+    buttons.forEach(button => {
+      button.addEventListener('click', function(event) {
+        event.preventDefault();
+        alert('Please text or call (669) 609 0086');
+      });
+    });
+  });
+</script>
 </body>
 </html>
